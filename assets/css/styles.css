@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 160px repeat(5, 75px);
+  gap: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.calculator__display {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  /* border-radius: 10px; */
+  /* background-color: #363636; */
+  /* color: #fff; */
+  font-family: "Orbitron", sans-serif;
+  font-size: 25px;
+  text-align: end;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.calculator__button {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  /* color: #fff; */
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 300ms;
+}
+
+.calculator__button > i {
+  pointer-events: none;
+}
+
+.calculator__button--operator,
+.calculator__button--function {
+  background-color: #a5b4fc;
+}
+
+.calculator__button--col-2 {
+  grid-column: span 2;
+  border-radius: 50px;
+}
+
+/* .calculator__button:hover {
+  transform: scaleX(1.1);
+} */
+
+.calculator__button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.calculator__button--operator:active,
+.calculator__button--function:active {
+  background-color: #818cf8;
+}
+
+.calculator__button--theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+#pre-value {
+  font-family: inherit;
+}
+
+#cur-value {
+  font-family: inherit;
+  font-size: 2rem;
+}

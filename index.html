@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator__button calculator__button--theme">
+          <i class="bi bi-moon"></i>
+        </div>
+
+        <div class="calculator__display">
+          <div id="pre-value"></div>
+          <div id="cur-value"></div>
+        </div>
+
+        <button
+          class="calculator__button calculator__button--col-2 calculator__button--function"
+          id="clear"
+        >
+          C
+        </button>
+        <button
+          class="calculator__button calculator__button--function"
+          id="delete"
+        >
+          <i class="bi bi-backspace"></i>
+        </button>
+        <button class="calculator__button calculator__button--operator" id="/">
+          &#247;
+        </button>
+        <button class="calculator__button calculator__button--number" id="7">
+          7
+        </button>
+        <button class="calculator__button calculator__button--number" id="8">
+          8
+        </button>
+        <button class="calculator__button calculator__button--number" id="9">
+          9
+        </button>
+        <button class="calculator__button calculator__button--operator" id="*">
+          &#10005;
+        </button>
+        <button class="calculator__button calculator__button--number" id="4">
+          4
+        </button>
+        <button class="calculator__button calculator__button--number" id="5">
+          5
+        </button>
+        <button class="calculator__button calculator__button--number" id="6">
+          6
+        </button>
+        <button class="calculator__button calculator__button--operator" id="-">
+          -
+        </button>
+        <button class="calculator__button calculator__button--number" id="1">
+          1
+        </button>
+        <button class="calculator__button calculator__button--number" id="2">
+          2
+        </button>
+        <button class="calculator__button calculator__button--number" id="3">
+          3
+        </button>
+        <button class="calculator__button calculator__button--operator" id="+">
+          +
+        </button>
+        <button
+          class="calculator__button calculator__button--col-2 calculator__button--number"
+          id="0"
+        >
+          0
+        </button>
+        <button class="calculator__button calculator__button--operator" id=".">
+          .
+        </button>
+        <button class="calculator__button calculator__button--operator" id="=">
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
