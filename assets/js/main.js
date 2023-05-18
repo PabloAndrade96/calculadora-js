@@ -13,9 +13,9 @@ buttons.forEach((btn) => {
     if (btn === "=") {
       calculate();
     } else if (btn === "delete") {
-      de(btn);
+      de();
     } else if (btn === "clear") {
-      clear(btn);
+      clear();
     } else if (btn === "darkmode") {
       darkmode(btn);
     } else {
@@ -36,18 +36,12 @@ const showDisplay = (btn) => {
   }
 };
 
-const clear = (btn) => {
-  if (btn === "clear") {
-    pre_value.textContent = "";
-    cur_value.textContent = "";
-  }
+const clear = () => {
+  pre_value.textContent = "";
+  cur_value.textContent = "";
 };
 
-const de = (btn) => {
-  if (btn === "delete") {
-    cur_value.textContent = cur_value.textContent.slice(0, -1);
-  }
-};
+const de = () => (cur_value.textContent = cur_value.textContent.slice(0, -1));
 
 const calculate = () => {
   let new_value;
