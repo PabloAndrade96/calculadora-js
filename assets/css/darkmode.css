@@ -1,0 +1,23 @@
+.darkmode .container {
+  background: #141e30;
+  /* background: -webkit-linear-gradient(to right, #243b55, #141e30); */
+  background: linear-gradient(to right, #243b55, #1d2a43);
+}
+
+.darkmode .calculator {
+  background-color: #1e293b;
+}
+
+.darkmode .calculator__display {
+  color: #fff;
+}
+
+.darkmode .calculator__button {
+  color: #fff;
+  background-color: #475569;
+}
+
+.darkmode .calculator__button--operator,
+.darkmode .calculator__button--function {
+  background-color: #a5b4fc;
+}

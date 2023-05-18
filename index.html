@@ -14,15 +14,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="./assets/css/darkmode.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Calculadora</title>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
-        <div class="calculator__button calculator__button--theme">
+        <button
+          class="calculator__button calculator__button--theme"
+          id="darkmode"
+        >
           <i class="bi bi-moon"></i>
-        </div>
+        </button>
 
         <div class="calculator__display">
           <div id="pre-value"></div>
