@@ -2,9 +2,7 @@ const pre_value = document.querySelector("#pre-value");
 const cur_value = document.querySelector("#cur-value");
 const buttons = document.querySelectorAll(".calculator__button");
 
-window.addEventListener("load", () => {
-  loadDarkmode();
-});
+window.addEventListener("load", () => loadDarkmode());
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", ({ target }) => {
